@@ -1,0 +1,531 @@
+
+@font-face {
+    font-family: amazon ;
+    src: url('../util/fontes/amazon.ttf');
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+   
+    overflow: hidden; 
+    background-color: #442c7b;
+
+}
+
+header {
+    background-color: white; 
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute; 
+    top: 20px; 
+    left: 50%; /* Move para o centro horizontalmente */
+    transform: translateX(-50%); 
+    border-radius: 23px;
+    z-index: 10; /* Garante que o cabeçalho fique acima das seções */
+}
+
+.header-parte-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 40vw; 
+}
+
+.header-parte-1 .img img {
+    width: 100px;
+    border-radius: 10px; 
+}
+
+nav a {
+    color: black; 
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; 
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #442c7b; 
+    color: white; 
+    text-decoration: none;
+}
+
+/* Primeira seção index */
+.secao-1-index {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-image: url('../img/fundo-1.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 80vh; 
+    position: relative; /* Para sobreposição com a seção 2 */
+}
+
+.banner { 
+    
+    width: 30vw; 
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.banner img {
+    align-items: center;
+    width: 100%; 
+    border-radius: 1000px;
+}
+
+
+
+.botao {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #442c7b; 
+    border-radius: 20px; 
+}
+
+.botao a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.botao:hover {
+    background-color: #8000b3; 
+}
+
+
+/* Segunda seção index */
+.secao-2-index {
+    position: relative; 
+    top: -32px; 
+    display: flex;
+    justify-content: center; 
+    height: 40vh; 
+    background-color: #fbce08;
+}
+
+.info {
+    display: flex; 
+    justify-content: space-around; 
+    text-align: center; 
+    width: 60%; 
+    height: 60%; 
+    border-radius: 60px;
+    background-color: white;
+    margin-top: -3rem;
+}
+
+.info div {
+    flex: 1; 
+    max-width: 300px;
+    padding: 1rem; 
+}
+
+.info h1{
+    text-decoration: dotted;
+    font-style: italic;
+    font-weight: bold;
+
+
+}
+/* fim da segunda seção index */
+
+/* Página açaí-secao-1-acai */
+
+.secao-1-acai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    background-image: url('../img/fundo-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#titulo{
+    margin-top: 3.5rem;
+    text-decoration: dotted;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 3rem;
+    width: 60%;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card a {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.card-text a {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+/* fim div açai */
+
+/* Página cupuaçu*/
+.secao-1-cupuaçu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    background-image: url('../img/fundo-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#titulo{
+    margin-top: 3.5rem;
+    text-decoration: dotted;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 2rem;
+    width: 60%;
+
+}
+
+.card {
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Fim pagia cupuaçu */
+
+
+
+/* Pagina de Promoção */
+
+.promocoes {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    background-image: url('../img/fundo-1.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+
+#titulo-promo {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    top: 7rem; 
+    left: center; 
+    padding: 10px;
+    width: 50%; 
+    text-decoration: dotted;
+    font-style: italic;
+   
+}
+
+.promocoes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10rem;
+
+   
+}
+
+.promocao {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(214, 30, 30, 0.1); /* sombreamemtno */
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.promocao:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.promocao img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.promocao h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.promocao p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.botao {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #442c7b; 
+    border-radius: 20px; 
+    color: white;
+    font-weight: bold;
+}
+
+
+.botao:hover {
+    background-color: #8000b3; 
+}
+
+
+.texto-explicativo {
+    display: none;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* essa é uma caixa de seleção mas essa função a faz ocultar  */
+.toggle {
+    display: none;
+} 
+
+/* UQando clicar exibir o texto */
+.toggle:checked + .texto-explicativo {
+    display: block;
+}
+
+
+
+/*  formulário de complementos */
+.complementos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 6rem;
+}
+
+.titulo-comple{
+    margin-bottom: 1.5rem;
+    
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.frutas label {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+/* Quantidade */
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+/* Botão de finalização */
+.form-footer {
+    text-align: center;
+}
+
+button {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #442c7b; 
+    border-radius: 20px; 
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    background-color: #8000b3; 
+}
+
+
+.sobre {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-image: url('../img/fundo-1.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 80vh; 
+    position: relative; /* Para sobreposição com a seção 2 */
+}
+
+.info-sobre {
+    display: flex; 
+    justify-content: space-around; 
+    text-align: center; 
+    width: 30%; 
+    height: 80%; 
+    border-radius: 60px;
+    background-color: white;
+    margin-top: 5rem;
+}
+
+.info-sobre div {
+
+    max-width: 300px;
+    padding: 1rem; 
+}
+
+.info-sobre h1 {
+    text-decoration: dotted;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
